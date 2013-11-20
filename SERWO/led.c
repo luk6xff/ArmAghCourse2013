@@ -7,7 +7,8 @@
 #define LED2_bm 1<<18
 #define LED3_bm 1<<19
 
-
+void Led_On(unsigned char ucLedlndeks);
+typedef enum{LEFT, RIGHT}Direction;
 
 void Led_Init(void)
 {

@@ -16,25 +16,14 @@ void KeyboardInit(void)
 
 KeyboardState eKeyboard_Read(void)
 {
-    if(!(IO0PIN&(BUTTON1_bm))) return BUTTON_1;
-    else if (!(IO0PIN&(BUTTON2_bm))) return BUTTON_2;
-    else if (!(IO0PIN&(BUTTON3_bm))) return BUTTON_3;
-    else if (!(IO0PIN&(BUTTON4_bm))) return BUTTON_4;
+    if((IO0PIN&(BUTTON1_bm))==0) return BUTTON_1;
+    else if ((IO0PIN&BUTTON2_bm)==0) return BUTTON_2;
+    else if ((IO0PIN&BUTTON3_bm)==0) return BUTTON_3;
+    else if ((IO0PIN&BUTTON4_bm)==0) return BUTTON_4;
     else return RELEASED_;
 }
 
 
-ButtonState ReadButton1(void)
-{
-    if(IO0PIN&BUTTON1_bm)
-    {
-        return RELEASED;
-    }
-    else
-    {
-        return PRESSED;
-    }
-}
 
 
 
