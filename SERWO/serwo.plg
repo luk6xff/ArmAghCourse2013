@@ -1,0 +1,21 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\lukasz\Desktop\ARMY\LukaszUszkoARMCurrent\SERWO\serwo.uvproj
+Project File Date:  11/20/2013
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=2112 RO-data=32 RW-data=12 ZI-data=1268  
+FromELF: creating hex file...
+".\serwo.axf" - 0 Errors, 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=2112 RO-data=32 RW-data=12 ZI-data=1268  
+FromELF: creating hex file...
+".\serwo.axf" - 0 Errors, 0 Warning(s).
