@@ -1,0 +1,30 @@
+Dependencies for Project 'usart3', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x51C7FF5E)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\keyboard.c)(0x528D1A1C)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\keyboard.o --omf_browse .\keyboard.crf --depend .\keyboard.d)
+I (C:\Keil\ARM\Inc\Philips\LPC21xx.h)(0x51C7FF8C)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7FD94)
+I (C:\Users\lukasz\Desktop\ARMY\LukaszUszkoARMCurrent\USART\usart3\keyboard.h)(0x528A0402)
+F (.\led.c)(0x528A0402)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\led.o --omf_browse .\led.crf --depend .\led.d)
+I (C:\Keil\ARM\Inc\Philips\LPC21xx.h)(0x51C7FF8C)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7FD94)
+I (C:\Users\lukasz\Desktop\ARMY\LukaszUszkoARMCurrent\USART\usart3\led.h)(0x528A11CA)
+F (.\main.c)(0x528D4387)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\main.o --omf_browse .\main.crf --depend .\main.d)
+I (C:\Users\lukasz\Desktop\ARMY\LukaszUszkoARMCurrent\USART\usart3\keyboard.h)(0x528A0402)
+I (C:\Users\lukasz\Desktop\ARMY\LukaszUszkoARMCurrent\USART\usart3\servo.h)(0x528D114A)
+I (C:\Users\lukasz\Desktop\ARMY\LukaszUszkoARMCurrent\USART\usart3\uart.h)(0x528D3D15)
+F (.\servo.c)(0x528D3F7E)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\servo.o --omf_browse .\servo.crf --depend .\servo.d)
+I (C:\Keil\ARM\Inc\Philips\LPC21xx.h)(0x51C7FF8C)
+I (C:\Users\lukasz\Desktop\ARMY\LukaszUszkoARMCurrent\USART\usart3\servo.h)(0x528D114A)
+I (C:\Users\lukasz\Desktop\ARMY\LukaszUszkoARMCurrent\USART\usart3\led.h)(0x528A11CA)
+I (C:\Users\lukasz\Desktop\ARMY\LukaszUszkoARMCurrent\USART\usart3\timer_interrupts.h)(0x528A0402)
+F (.\timer_interrupts.c)(0x528A0402)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\timer_interrupts.o --omf_browse .\timer_interrupts.crf --depend .\timer_interrupts.d)
+I (C:\Keil\ARM\Inc\Philips\LPC21xx.H)(0x51C7FF8C)
+I (C:\Users\lukasz\Desktop\ARMY\LukaszUszkoARMCurrent\USART\usart3\timer_interrupts.h)(0x528A0402)
+I (C:\Users\lukasz\Desktop\ARMY\LukaszUszkoARMCurrent\USART\usart3\led.h)(0x528A11CA)
+F (.\uart.c)(0x528D4F4A)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\uart.o --omf_browse .\uart.crf --depend .\uart.d)
+I (C:\Keil\ARM\Inc\Philips\LPC21xx.h)(0x51C7FF8C)
+F (.\keyboard.h)(0x528A0402)()
+F (.\led.h)(0x528A11CA)()
+F (.\servo.h)(0x528D114A)()
+F (.\timer_interrupts.h)(0x528A0402)()
+F (.\uart.h)(0x528D3D15)()

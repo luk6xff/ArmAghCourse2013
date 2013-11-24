@@ -1,0 +1,15 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\lukasz\Desktop\ARMY\LukaszUszkoARMCurrent\USART\usart2\usart2.uvproj
+Project File Date:  11/21/2013
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling uart.c...
+linking...
+Program Size: Code=1944 RO-data=32 RW-data=4 ZI-data=1260  
+FromELF: creating hex file...
+".\usart2.axf" - 0 Errors, 0 Warning(s).
