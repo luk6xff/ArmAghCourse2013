@@ -1,0 +1,26 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\TRANSMIT\transmit4\transmition.uvproj
+Project File Date:  11/25/2013
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+main.c(44): warning:  #167-D: argument of type "const char *" is incompatible with parameter of type "char *"
+main.c(45): warning:  #167-D: argument of type "const char *" is incompatible with parameter of type "unsigned char *"
+main.c(18): warning:  #177-D: variable "pcStrTempBuf" was declared but never referenced
+linking...
+Program Size: Code=4448 RO-data=52 RW-data=44 ZI-data=1492  
+FromELF: creating hex file...
+".\transmition.axf" - 0 Errors, 3 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+main.c(45): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+main.c(18): warning:  #177-D: variable "pcStrTempBuf" was declared but never referenced
+linking...
+Program Size: Code=4448 RO-data=32 RW-data=64 ZI-data=1496  
+FromELF: creating hex file...
+".\transmition.axf" - 0 Errors, 2 Warning(s).

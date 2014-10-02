@@ -1,40 +1,40 @@
 Dependencies for Project 'dekod3', Target 'Target 1': (DO NOT MODIFY !)
-F (.\Startup.s)(0x51C7FF5E)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
-F (.\keyboard.c)(0x528D1A1C)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\keyboard.o --omf_browse .\keyboard.crf --depend .\keyboard.d)
-I (C:\Keil\ARM\Inc\Philips\LPC21xx.h)(0x51C7FF8C)
-I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7FD94)
-I (C:\Users\lukasz\Desktop\ARMY\LukaszUszkoARMCurrent\DEKODOWANIE\dekod3\keyboard.h)(0x528A0402)
-F (.\led.c)(0x528A0402)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\led.o --omf_browse .\led.crf --depend .\led.d)
-I (C:\Keil\ARM\Inc\Philips\LPC21xx.h)(0x51C7FF8C)
-I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7FD94)
-I (C:\Users\lukasz\Desktop\ARMY\LukaszUszkoARMCurrent\DEKODOWANIE\dekod3\led.h)(0x528A11CA)
-F (.\main.c)(0x52914D36)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\main.o --omf_browse .\main.crf --depend .\main.d)
-I (C:\Users\lukasz\Desktop\ARMY\LukaszUszkoARMCurrent\DEKODOWANIE\dekod3\servo.h)(0x528D114A)
-I (C:\Users\lukasz\Desktop\ARMY\LukaszUszkoARMCurrent\DEKODOWANIE\dekod3\uart.h)(0x528FD671)
-I (C:\Users\lukasz\Desktop\ARMY\LukaszUszkoARMCurrent\DEKODOWANIE\dekod3\command_decoder.h)(0x52914D50)
-F (.\servo.c)(0x528D3F7E)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\servo.o --omf_browse .\servo.crf --depend .\servo.d)
-I (C:\Keil\ARM\Inc\Philips\LPC21xx.h)(0x51C7FF8C)
-I (C:\Users\lukasz\Desktop\ARMY\LukaszUszkoARMCurrent\DEKODOWANIE\dekod3\servo.h)(0x528D114A)
-I (C:\Users\lukasz\Desktop\ARMY\LukaszUszkoARMCurrent\DEKODOWANIE\dekod3\led.h)(0x528A11CA)
-I (C:\Users\lukasz\Desktop\ARMY\LukaszUszkoARMCurrent\DEKODOWANIE\dekod3\timer_interrupts.h)(0x528A0402)
-F (.\timer_interrupts.c)(0x528A0402)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\timer_interrupts.o --omf_browse .\timer_interrupts.crf --depend .\timer_interrupts.d)
-I (C:\Keil\ARM\Inc\Philips\LPC21xx.H)(0x51C7FF8C)
-I (C:\Users\lukasz\Desktop\ARMY\LukaszUszkoARMCurrent\DEKODOWANIE\dekod3\timer_interrupts.h)(0x528A0402)
-I (C:\Users\lukasz\Desktop\ARMY\LukaszUszkoARMCurrent\DEKODOWANIE\dekod3\led.h)(0x528A11CA)
-F (.\uart.c)(0x52914AF2)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\uart.o --omf_browse .\uart.crf --depend .\uart.d)
-I (C:\Keil\ARM\Inc\Philips\LPC21xx.h)(0x51C7FF8C)
-I (C:\Users\lukasz\Desktop\ARMY\LukaszUszkoARMCurrent\DEKODOWANIE\dekod3\uart.h)(0x528FD671)
-F (.\keyboard.h)(0x528A0402)()
-F (.\led.h)(0x528A11CA)()
-F (.\servo.h)(0x528D114A)()
-F (.\timer_interrupts.h)(0x528A0402)()
-F (.\uart.h)(0x528FD671)()
-F (.\string.c)(0x529144E1)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\string.o --omf_browse .\string.crf --depend .\string.d)
-I (C:\Users\lukasz\Desktop\ARMY\LukaszUszkoARMCurrent\DEKODOWANIE\dekod3\string.h)(0x529144DA)
-F (.\command_decoder.c)(0x52914D2F)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\command_decoder.o --omf_browse .\command_decoder.crf --depend .\command_decoder.d)
-I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7FD94)
-I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7FD94)
-I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7FD94)
-I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7FD94)
-I (C:\Users\lukasz\Desktop\ARMY\LukaszUszkoARMCurrent\DEKODOWANIE\dekod3\string.h)(0x529144DA)
-I (C:\Users\lukasz\Desktop\ARMY\LukaszUszkoARMCurrent\DEKODOWANIE\dekod3\command_decoder.h)(0x52914D50)
+F (.\Startup.s)(0x51C80D6E)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\keyboard.c)(0x528D282C)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\keyboard.o --omf_browse .\keyboard.crf --depend .\keyboard.d)
+I (C:\Keil\ARM\Inc\Philips\LPC21xx.h)(0x51C80D9C)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C80BA4)
+I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\DEKODOWANIE\dekod3\keyboard.h)(0x528A1212)
+F (.\led.c)(0x528A1212)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\led.o --omf_browse .\led.crf --depend .\led.d)
+I (C:\Keil\ARM\Inc\Philips\LPC21xx.h)(0x51C80D9C)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C80BA4)
+I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\DEKODOWANIE\dekod3\led.h)(0x528A1FDA)
+F (.\main.c)(0x52915B46)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\main.o --omf_browse .\main.crf --depend .\main.d)
+I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\DEKODOWANIE\dekod3\servo.h)(0x528D1F5A)
+I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\DEKODOWANIE\dekod3\uart.h)(0x528FE481)
+I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\DEKODOWANIE\dekod3\command_decoder.h)(0x52916389)
+F (.\servo.c)(0x528D4D8E)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\servo.o --omf_browse .\servo.crf --depend .\servo.d)
+I (C:\Keil\ARM\Inc\Philips\LPC21xx.h)(0x51C80D9C)
+I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\DEKODOWANIE\dekod3\servo.h)(0x528D1F5A)
+I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\DEKODOWANIE\dekod3\led.h)(0x528A1FDA)
+I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\DEKODOWANIE\dekod3\timer_interrupts.h)(0x528A1212)
+F (.\timer_interrupts.c)(0x528A1212)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\timer_interrupts.o --omf_browse .\timer_interrupts.crf --depend .\timer_interrupts.d)
+I (C:\Keil\ARM\Inc\Philips\LPC21xx.H)(0x51C80D9C)
+I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\DEKODOWANIE\dekod3\timer_interrupts.h)(0x528A1212)
+I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\DEKODOWANIE\dekod3\led.h)(0x528A1FDA)
+F (.\uart.c)(0x52915902)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\uart.o --omf_browse .\uart.crf --depend .\uart.d)
+I (C:\Keil\ARM\Inc\Philips\LPC21xx.h)(0x51C80D9C)
+I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\DEKODOWANIE\dekod3\uart.h)(0x528FE481)
+F (.\keyboard.h)(0x528A1212)()
+F (.\led.h)(0x528A1FDA)()
+F (.\servo.h)(0x528D1F5A)()
+F (.\timer_interrupts.h)(0x528A1212)()
+F (.\uart.h)(0x528FE481)()
+F (.\string.c)(0x529152F1)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\string.o --omf_browse .\string.crf --depend .\string.d)
+I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\DEKODOWANIE\dekod3\string.h)(0x529152EA)
+F (.\command_decoder.c)(0x5291638E)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\command_decoder.o --omf_browse .\command_decoder.crf --depend .\command_decoder.d)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C80BA4)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C80BA4)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C80BA4)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C80BA4)
+I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\DEKODOWANIE\dekod3\string.h)(0x529152EA)
+I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\DEKODOWANIE\dekod3\command_decoder.h)(0x52916389)
