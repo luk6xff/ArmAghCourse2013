@@ -5,9 +5,9 @@
 ////////////////////////////////////////////////////
 unsigned char ucTokenNr;
 struct Token asToken[MAX_TOKEN_NR];
-char cCounterStr[20]= "licznik";
-static unsigned int uiCounterValue;
 
+static unsigned int uiCounterValue;
+static void displayCounterValue(unsigned int uiCounterValue);
 
 int main ()
 {
@@ -41,14 +41,17 @@ int main ()
         }
 				if(Transmiter_GetStatus()==FREE){
 					uiCounterValue++;
-					AppendUIntToString(uiCounterValue,cCounterStr);
-				Transmiter_SendString(cCounterStr);
+				  displayCounterValue(uiCounterValue);
 				}
     }
 }
 
 
-
+static void displayCounterValue(unsigned int uiCounterValue) {
+	char cCounterStr[20]= "licznik ";
+	AppendUIntToString(uiCounterValue,cCounterStr);
+	Transmiter_SendString((char*)cCounterStr);
+}
 
 
 
