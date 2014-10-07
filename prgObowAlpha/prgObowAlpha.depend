@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1382385126 source:c:\users\lukasz\desktop\prgobowalpha\prgobowalpha\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdbool.h>
+
+1385171291 source:c:\users\lukasz\desktop\army\prgobowalpha\prgobowalpha\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdbool.h>
+
+1385254459 source:c:\users\lukasz\desktop\agh\7_semestr\army\prgobowalpha\prgobowalpha\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdbool.h>
+

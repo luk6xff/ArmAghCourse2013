@@ -472,6 +472,16 @@
               <FileType>5</FileType>
               <FilePath>.\uart.h</FilePath>
             </File>
+            <File>
+              <FileName>watch.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\watch.c</FilePath>
+            </File>
+            <File>
+              <FileName>watch.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\watch.h</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1382340697 source:c:\users\lukasz\desktop\prgobowiazkowy\progobowiazkowy\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdbool.h>
+
+1384805622 source:c:\users\lukasz\desktop\army\prgobowiazkowy\progobowiazkowy\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdbool.h>
+
