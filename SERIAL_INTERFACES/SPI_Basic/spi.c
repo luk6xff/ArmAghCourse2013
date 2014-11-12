@@ -52,6 +52,7 @@ void DAC_MCP4921_Set(unsigned int uiVoltage){
 	S0SPDR=(uiVoltage)&0xFF;
 	/* Wait for transfer to be completed */
 	while(!(S0SPSR & SPSR_SPIF)){};
+	//S0SPDR=S0SPDR; //read dummy data to clear flags
 	CS_PIN_RESET;
 
 }

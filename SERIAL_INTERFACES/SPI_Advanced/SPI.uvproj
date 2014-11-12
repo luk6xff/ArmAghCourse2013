@@ -437,6 +437,41 @@
               <FileType>5</FileType>
               <FilePath>.\timer_interrupts.h</FilePath>
             </File>
+            <File>
+              <FileName>dacMcp4921.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\dacMcp4921.c</FilePath>
+            </File>
+            <File>
+              <FileName>command_decoder.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\command_decoder.h</FilePath>
+            </File>
+            <File>
+              <FileName>string.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\string.h</FilePath>
+            </File>
+            <File>
+              <FileName>uart.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\uart.h</FilePath>
+            </File>
+            <File>
+              <FileName>command_decoder.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\command_decoder.c</FilePath>
+            </File>
+            <File>
+              <FileName>string.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\string.c</FilePath>
+            </File>
+            <File>
+              <FileName>uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\uart.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>
