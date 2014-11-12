@@ -1,0 +1,16 @@
+--cpu ARM7TDMI
+".\startup.o"
+".\keyboard.o"
+".\led.o"
+".\main.o"
+".\spi.o"
+".\timer_interrupts.o"
+".\dacmcp4921.o"
+".\command_decoder.o"
+".\string.o"
+".\uart.o"
+".\mcp23s09.o"
+--strict --scatter ".\SPI.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\SPI.map" -o .\SPI.axf

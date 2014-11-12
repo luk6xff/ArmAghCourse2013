@@ -1,0 +1,95 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\SPI_Advanced\MCP_23S09\SPI.uvproj
+Project File Date:  11/12/2014
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+main.c(51): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3856 RO-data=32 RW-data=40 ZI-data=1520  
+FromELF: creating hex file...
+".\SPI.axf" - 0 Errors, 1 Warning(s).
+Build target 'Target 1'
+compiling mcp23S09.c...
+mcp23S09.c(23): warning:  #1-D: last line of file ends without a newline
+mcp23S09.c(12): warning:  #177-D: variable "spiFrameParams" was declared but never referenced
+mcp23S09.c(13): warning:  #177-D: variable "spiTransactionParams" was declared but never referenced
+mcp23S09.c(14): warning:  #177-D: variable "txBuf" was declared but never referenced
+mcp23S09.c(15): warning:  #177-D: variable "rxBuf" was declared but never referenced
+mcp23S09.c(17): warning:  #177-D: function "Port_MCP23S09_InitCSPin_InitCSPin" was declared but never referenced
+linking...
+Program Size: Code=3856 RO-data=32 RW-data=40 ZI-data=1520  
+FromELF: creating hex file...
+".\SPI.axf" - 0 Errors, 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+main.c(51): warning:  #111-D: statement is unreachable
+compiling dacMcp4921.c...
+compiling command_decoder.c...
+compiling mcp23S09.c...
+mcp23S09.c(106): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=3856 RO-data=32 RW-data=64 ZI-data=1520  
+FromELF: creating hex file...
+".\SPI.axf" - 0 Errors, 2 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+mcp23S09.h(5): warning:  #1-D: last line of file ends without a newline
+main.c(63): warning:  #111-D: statement is unreachable
+compiling mcp23S09.c...
+mcp23S09.h(5): warning:  #1-D: last line of file ends without a newline
+mcp23S09.c(106): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=4496 RO-data=32 RW-data=68 ZI-data=1556  
+FromELF: creating hex file...
+".\SPI.axf" - 0 Errors, 4 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+mcp23S09.h(5): warning:  #1-D: last line of file ends without a newline
+main.c(51): error:  #1182: a declaration cannot have a label
+main.c(53): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+main.c(36): warning:  #546-D: transfer of control bypasses initialization of:
+            variable "cDataStr" (declared at line 51)
+                                                        switch(asToken[0].uValue.eKeyword)
+                                                        ^
+main.c(65): warning:  #111-D: statement is unreachable
+".\SPI.axf" - 1 Errors, 4 Warning(s).
+Target not created
+Build target 'Target 1'
+compiling main.c...
+mcp23S09.h(5): warning:  #1-D: last line of file ends without a newline
+main.c(51): error:  #1182: a declaration cannot have a label
+main.c(53): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+main.c(65): warning:  #111-D: statement is unreachable
+".\SPI.axf" - 1 Errors, 3 Warning(s).
+Target not created
+Build target 'Target 1'
+compiling main.c...
+mcp23S09.h(5): warning:  #1-D: last line of file ends without a newline
+main.c(53): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+main.c(65): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=4532 RO-data=48 RW-data=68 ZI-data=1556  
+FromELF: creating hex file...
+".\SPI.axf" - 0 Errors, 3 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+mcp23S09.h(5): warning:  #1-D: last line of file ends without a newline
+main.c(65): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=4532 RO-data=48 RW-data=68 ZI-data=1556  
+FromELF: creating hex file...
+".\SPI.axf" - 0 Errors, 2 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+mcp23S09.h(5): warning:  #1-D: last line of file ends without a newline
+main.c(64): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=4532 RO-data=48 RW-data=68 ZI-data=1556  
+FromELF: creating hex file...
+".\SPI.axf" - 0 Errors, 2 Warning(s).

@@ -1,0 +1,54 @@
+Dependencies for Project 'SPI', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x51C80D6E)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\keyboard.c)(0x543E26F4)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\keyboard.o --omf_browse .\keyboard.crf --depend .\keyboard.d)
+I (C:\Keil\ARM\Inc\Philips\LPC21xx.h)(0x51C7FF8C)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7FD94)
+I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\SPI_Advanced\MCP_23S09\keyboard.h)(0x543E26F4)
+F (.\led.c)(0x543E26F4)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\led.o --omf_browse .\led.crf --depend .\led.d)
+I (C:\Keil\ARM\Inc\Philips\LPC21xx.h)(0x51C7FF8C)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7FD94)
+I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\SPI_Advanced\MCP_23S09\led.h)(0x543E26F4)
+F (.\main.c)(0x5462CFE3)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\main.o --omf_browse .\main.crf --depend .\main.d)
+I (C:\Keil\ARM\Inc\Philips\LPC21xx.h)(0x51C7FF8C)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7FD94)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7FD94)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7FD94)
+I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\SPI_Advanced\MCP_23S09\spi.h)(0x546290D9)
+I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\SPI_Advanced\MCP_23S09\timer_interrupts.h)(0x546270F9)
+I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\SPI_Advanced\MCP_23S09\led.h)(0x543E26F4)
+I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\SPI_Advanced\MCP_23S09\keyboard.h)(0x543E26F4)
+I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\SPI_Advanced\MCP_23S09\dacMcp4921.h)(0x5462C3EC)
+I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\SPI_Advanced\MCP_23S09\uart.h)(0x542DCC81)
+I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\SPI_Advanced\MCP_23S09\command_decoder.h)(0x5462C879)
+I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\SPI_Advanced\MCP_23S09\string.h)(0x529312A6)
+F (.\keyboard.h)(0x543E26F4)()
+F (.\led.h)(0x543E26F4)()
+F (.\spi.c)(0x5462C5C5)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\spi.o --omf_browse .\spi.crf --depend .\spi.d)
+I (C:\Keil\ARM\Inc\Philips\LPC21xx.h)(0x51C7FF8C)
+I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\SPI_Advanced\MCP_23S09\spi.h)(0x546290D9)
+F (.\timer_interrupts.c)(0x54627088)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\timer_interrupts.o --omf_browse .\timer_interrupts.crf --depend .\timer_interrupts.d)
+I (C:\Keil\ARM\Inc\Philips\LPC21xx.H)(0x51C7FF8C)
+I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\SPI_Advanced\MCP_23S09\timer_interrupts.h)(0x546270F9)
+I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\SPI_Advanced\MCP_23S09\led.h)(0x543E26F4)
+F (.\timer_interrupts.h)(0x546270F9)()
+F (.\dacMcp4921.c)(0x5462CBEB)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\dacmcp4921.o --omf_browse .\dacmcp4921.crf --depend .\dacmcp4921.d)
+I (C:\Keil\ARM\Inc\Philips\LPC21xx.h)(0x51C7FF8C)
+I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\SPI_Advanced\MCP_23S09\spi.h)(0x546290D9)
+I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\SPI_Advanced\MCP_23S09\dacMcp4921.h)(0x5462C3EC)
+F (.\command_decoder.h)(0x5462C879)()
+F (.\string.h)(0x529312A6)()
+F (.\uart.h)(0x542DCC81)()
+F (.\command_decoder.c)(0x5462C873)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\command_decoder.o --omf_browse .\command_decoder.crf --depend .\command_decoder.d)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7FD94)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7FD94)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7FD94)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7FD94)
+I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\SPI_Advanced\MCP_23S09\string.h)(0x529312A6)
+I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\SPI_Advanced\MCP_23S09\command_decoder.h)(0x5462C879)
+F (.\string.c)(0x529312A6)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\string.o --omf_browse .\string.crf --depend .\string.d)
+I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\SPI_Advanced\MCP_23S09\string.h)(0x529312A6)
+F (.\uart.c)(0x542DCE6A)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\uart.o --omf_browse .\uart.crf --depend .\uart.d)
+I (C:\Keil\ARM\Inc\Philips\LPC21xx.h)(0x51C7FF8C)
+I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\SPI_Advanced\MCP_23S09\uart.h)(0x542DCC81)
+I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\SPI_Advanced\MCP_23S09\string.h)(0x529312A6)
+F (.\mcp23S09.c)(0x546343FE)()
