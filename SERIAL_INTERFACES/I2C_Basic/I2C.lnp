@@ -1,0 +1,17 @@
+--cpu ARM7TDMI
+".\startup.o"
+".\command_decoder.o"
+".\dacmcp4921.o"
+".\keyboard.o"
+".\led.o"
+".\main.o"
+".\mcp23s09.o"
+".\spi.o"
+".\string.o"
+".\timer_interrupts.o"
+".\uart.o"
+".\i2c.o"
+--strict --scatter ".\I2C.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\I2C.map" -o .\I2C.axf
