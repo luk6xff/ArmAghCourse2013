@@ -497,6 +497,11 @@
               <FileType>1</FileType>
               <FilePath>.\i2c.c</FilePath>
             </File>
+            <File>
+              <FileName>pcf8574.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\pcf8574.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

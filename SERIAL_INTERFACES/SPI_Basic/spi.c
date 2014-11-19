@@ -40,20 +40,21 @@ static void spiInit(void)
     CS_PinDirMask|=CS_PinMask;
 		S0SPCCR= SCK_FREQ_DIVIDER; /* frequency of SCK = pclk/8 */	
 	  S0SPCR = (SPCR_MSTR);//~SPCR_CPOL ,~SPCR_CPHA
+	  CS_PIN_SET;
 }
 
 
 void DAC_MCP4921_Set(unsigned int uiVoltage){
 	spiInit();
-  CS_PIN_SET; 
-	S0SPDR=(uiVoltage>>8)&0xFF;
+  CS_PIN_RESET; 
+	S0SPDR=((uiVoltage>>8)&0xFF);///|0x30;
 	/* Wait for transfer to be completed */
 	while(!(S0SPSR & SPSR_SPIF)){};
 	S0SPDR=(uiVoltage)&0xFF;
 	/* Wait for transfer to be completed */
 	while(!(S0SPSR & SPSR_SPIF)){};
 	//S0SPDR=S0SPDR; //read dummy data to clear flags
-	CS_PIN_RESET;
+	CS_PIN_SET;
 
 }
 
