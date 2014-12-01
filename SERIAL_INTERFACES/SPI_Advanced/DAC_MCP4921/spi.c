@@ -64,7 +64,7 @@ static void DAC_MCP4921_Set(unsigned int uiVoltage){
 void SPI_ConfigMaster(struct SPI_FrameParams spiFrameParams){
   //hardware dependent code
 	//SPI0 (SCK-P0.4; MISO-P0.5; MOSI-P0.6) 	
-	  PINSEL0 = SCK_PinP04SelMask|MISO_PinP05SelMask|MOSI_PinP06SelMask;  //0x1500; //0x5500 with SSEL on pin P0.7
+	  PINSEL0 = 0x5500; //SCK_PinP04SelMask|MISO_PinP05SelMask|MOSI_PinP06SelMask;  //0x1500; //0x5500 with SSEL on pin P0.7
     S0SPCCR = spiFrameParams.ClkDivider;
 	  S0SPCR=0;
 	  S0SPCR= (spiFrameParams.ucCpha<<SPCR_CPHA_POS)|(spiFrameParams.ucCpol<<SPCR_CPOL_POS)|(spiFrameParams.ucClsbf<<SPCR_LSBF_POS);

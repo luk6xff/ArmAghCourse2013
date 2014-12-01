@@ -46,7 +46,7 @@ static void WatchUpdate(void){
 /*public functions*/
 void WatchInit(void){
   sWatch = sWatchDefaultConfig;
-	Timer0Interrupts_Init(100000, WatchUpdate);
+	Timer0Interrupts_Init(1000000, WatchUpdate);
 }
 
 unsigned char WatchGetSeconds(void){

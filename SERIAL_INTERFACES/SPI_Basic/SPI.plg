@@ -3,19 +3,7 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
-C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\SPI_Basic\SPI.uvproj
-Project File Date:  11/11/2014
+H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\SPI_Basic\SPI.uvproj
+Project File Date:  11/27/2014
 
 <h2>Output:</h2>
-Build target 'Target 1'
-compiling spi.c...
-linking...
-Program Size: Code=1352 RO-data=32 RW-data=12 ZI-data=1260  
-FromELF: creating hex file...
-".\SPI.axf" - 0 Errors, 0 Warning(s).
-Build target 'Target 1'
-compiling spi.c...
-linking...
-Program Size: Code=1352 RO-data=32 RW-data=12 ZI-data=1260  
-FromELF: creating hex file...
-".\SPI.axf" - 0 Errors, 0 Warning(s).

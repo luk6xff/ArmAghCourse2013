@@ -21,7 +21,7 @@ int main(void)
 	DAC_MCP4921_Init();
 	char uartReceiverBuffer[RECEIVER_SIZE];
   UART_InitWithInt(9600);
-    
+   Led_Init(); //DEBUG 
 	
 		while(1)
     {
@@ -37,6 +37,7 @@ int main(void)
                 case DACSET:
                      if((asToken[1].eType==NUMBER)&&(asToken[1].uValue.uiNumber<0x0FFF))
 												DAC_MCP4921_Set_Adv(asToken[1].uValue.uiNumber);
+										    Led_StepRight();
                     break;
                 default:
                     break;

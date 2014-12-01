@@ -11,7 +11,7 @@ static void setDacValues(void){
 	 static  unsigned char uiAdcSendDataCounter=0;
 	 unsigned int uiAdcValue=0;
 	 uiAdcSendDataCounter++;
-		
+	 Led_StepRight();
 	 if(uiAdcSendDataCounter==1){
 			uiAdcValue=0;
 		}
@@ -27,8 +27,9 @@ static void setDacValues(void){
 
 int main(void)
 {
-	
-	Timer0Interrupts_Init(250000, setDacValues);
+	Led_Init();
+	spiInit();
+	Timer0Interrupts_Init(1000000, setDacValues);
 	while(1){};
 
   return 0;

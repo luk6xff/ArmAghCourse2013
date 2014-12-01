@@ -41,7 +41,7 @@ void DAC_MCP4921_Init(void){
 
 void DAC_MCP4921_Set_Adv(unsigned int uiData){
     CS_PIN_RESET;
-    txBuf[0]= (uiData>>8)&0xFF;
+    txBuf[0]= ((uiData>>8)&0xFF)|0x30;
 	  txBuf[1]=  (uiData)&0xFF;
     SPI_ExecuteTransaction(spiTransactionParams );
 	
