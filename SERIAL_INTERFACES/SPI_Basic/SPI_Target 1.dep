@@ -1,29 +1,29 @@
 Dependencies for Project 'SPI', Target 'Target 1': (DO NOT MODIFY !)
-F (.\Startup.s)(0x5476EEF1)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I "H:\Program Files\Keil\ARM\RV31\INC"-I "H:\Program Files\Keil\ARM\CMSIS\Include"-I "H:\Program Files\Keil\ARM\Inc\Philips"--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
-F (.\keyboard.c)(0x5476EEF1)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I "H:\Program Files\Keil\ARM\RV31\INC"-I "H:\Program Files\Keil\ARM\CMSIS\Include"-I "H:\Program Files\Keil\ARM\Inc\Philips"-o .\keyboard.o --omf_browse .\keyboard.crf --depend .\keyboard.d)
+F (.\Startup.s)(0x54943B7A)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I "H:\Program Files\Keil\ARM\RV31\INC"-I "H:\Program Files\Keil\ARM\CMSIS\Include"-I "H:\Program Files\Keil\ARM\Inc\Philips"--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\keyboard.c)(0x54943B7A)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I "H:\Program Files\Keil\ARM\RV31\INC"-I "H:\Program Files\Keil\ARM\CMSIS\Include"-I "H:\Program Files\Keil\ARM\Inc\Philips"-o .\keyboard.o --omf_browse .\keyboard.crf --depend .\keyboard.d)
 I (C:\Keil\ARM\Inc\Philips\LPC21xx.h)(0x00000000)
 I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x00000000)
-I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\SPI_Basic\keyboard.h)(0x5476EEF1)
-F (.\led.c)(0x5476EEF1)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I "H:\Program Files\Keil\ARM\RV31\INC"-I "H:\Program Files\Keil\ARM\CMSIS\Include"-I "H:\Program Files\Keil\ARM\Inc\Philips"-o .\led.o --omf_browse .\led.crf --depend .\led.d)
+I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\SPI_Basic\keyboard.h)(0x54943B7A)
+F (.\led.c)(0x54943B7A)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I "H:\Program Files\Keil\ARM\RV31\INC"-I "H:\Program Files\Keil\ARM\CMSIS\Include"-I "H:\Program Files\Keil\ARM\Inc\Philips"-o .\led.o --omf_browse .\led.crf --depend .\led.d)
 I (C:\Keil\ARM\Inc\Philips\LPC21xx.h)(0x00000000)
 I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x00000000)
-I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\SPI_Basic\led.h)(0x5476EEF1)
-F (.\main.c)(0x5476F7CC)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I "H:\Program Files\Keil\ARM\RV31\INC"-I "H:\Program Files\Keil\ARM\CMSIS\Include"-I "H:\Program Files\Keil\ARM\Inc\Philips"-o .\main.o --omf_browse .\main.crf --depend .\main.d)
+I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\SPI_Basic\led.h)(0x54943B7A)
+F (.\main.c)(0x54943B7A)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I "H:\Program Files\Keil\ARM\RV31\INC"-I "H:\Program Files\Keil\ARM\CMSIS\Include"-I "H:\Program Files\Keil\ARM\Inc\Philips"-o .\main.o --omf_browse .\main.crf --depend .\main.d)
 I (H:\Program Files\Keil\ARM\Inc\Philips\LPC21xx.h)(0x51C7FF8C)
 I (H:\Program Files\Keil\ARM\ARMCC\include\stdio.h)(0x51C7FD94)
 I (H:\Program Files\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7FD94)
 I (H:\Program Files\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7FD94)
-I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\SPI_Basic\spi.h)(0x5476F488)
-I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\SPI_Basic\timer_interrupts.h)(0x5476EEF1)
-I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\SPI_Basic\led.h)(0x5476EEF1)
-I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\SPI_Basic\keyboard.h)(0x5476EEF1)
-F (.\keyboard.h)(0x5476EEF1)()
-F (.\led.h)(0x5476EEF1)()
-F (.\spi.c)(0x5476F557)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I "H:\Program Files\Keil\ARM\RV31\INC"-I "H:\Program Files\Keil\ARM\CMSIS\Include"-I "H:\Program Files\Keil\ARM\Inc\Philips"-o .\spi.o --omf_browse .\spi.crf --depend .\spi.d)
+I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\SPI_Basic\spi.h)(0x54943B7A)
+I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\SPI_Basic\timer_interrupts.h)(0x54943B7A)
+I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\SPI_Basic\led.h)(0x54943B7A)
+I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\SPI_Basic\keyboard.h)(0x54943B7A)
+F (.\keyboard.h)(0x54943B7A)()
+F (.\led.h)(0x54943B7A)()
+F (.\spi.c)(0x54943B7A)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I "H:\Program Files\Keil\ARM\RV31\INC"-I "H:\Program Files\Keil\ARM\CMSIS\Include"-I "H:\Program Files\Keil\ARM\Inc\Philips"-o .\spi.o --omf_browse .\spi.crf --depend .\spi.d)
 I (H:\Program Files\Keil\ARM\Inc\Philips\LPC21xx.h)(0x51C7FF8C)
-I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\SPI_Basic\spi.h)(0x5476F488)
-F (.\timer_interrupts.c)(0x5476EEF1)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I "H:\Program Files\Keil\ARM\RV31\INC"-I "H:\Program Files\Keil\ARM\CMSIS\Include"-I "H:\Program Files\Keil\ARM\Inc\Philips"-o .\timer_interrupts.o --omf_browse .\timer_interrupts.crf --depend .\timer_interrupts.d)
+I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\SPI_Basic\spi.h)(0x54943B7A)
+F (.\timer_interrupts.c)(0x54943B7A)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I "H:\Program Files\Keil\ARM\RV31\INC"-I "H:\Program Files\Keil\ARM\CMSIS\Include"-I "H:\Program Files\Keil\ARM\Inc\Philips"-o .\timer_interrupts.o --omf_browse .\timer_interrupts.crf --depend .\timer_interrupts.d)
 I (C:\Keil\ARM\Inc\Philips\LPC21xx.H)(0x00000000)
-I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\SPI_Basic\timer_interrupts.h)(0x5476EEF1)
-I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\SPI_Basic\led.h)(0x5476EEF1)
-F (.\timer_interrupts.h)(0x5476EEF1)()
+I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\SPI_Basic\timer_interrupts.h)(0x54943B7A)
+I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\SPI_Basic\led.h)(0x54943B7A)
+F (.\timer_interrupts.h)(0x54943B7A)()

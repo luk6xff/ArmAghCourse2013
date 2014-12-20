@@ -37,34 +37,11 @@
 #define MOSI_PinP06SelMask (0<<13|1<<12)
 
 
-/*
-static void spiInit(void)
-{  
-//SPI0 (SCK-P0.4; MISO-P0.5; MOSI-P0.6) 	
-	  PINSEL0 = SCK_PinP04SelMask|MISO_PinP05SelMask|MOSI_PinP06SelMask;  //0x1500; //0x5500 with SSEL on pin P0.7
-    CS_PinDirMask|=CS_PinMask;
-		S0SPCCR= SCK_FREQ_DIVIDER; // frequency of SCK = pclk/8 	
-	  S0SPCR = (SPCR_MSTR);//~SPCR_CPOL ,~SPCR_CPHA
-}
 
-
-static void DAC_MCP4921_Set(unsigned int uiVoltage){
-	spiInit();
-  CS_PIN_SET; 
-	S0SPDR=(uiVoltage>>8)&0xFF;
-	// Wait for transfer to be completed 
-	while(!(S0SPSR & SPSR_SPIF)){};
-	S0SPDR=(uiVoltage)&0xFF;
-	// Wait for transfer to be completed 
-	while(!(S0SPSR & SPSR_SPIF)){};
-	CS_PIN_RESET;
-
-}
-*/
 void SPI_ConfigMaster(struct SPI_FrameParams spiFrameParams){
   //hardware dependent code
 	//SPI0 (SCK-P0.4; MISO-P0.5; MOSI-P0.6) 	
-	  PINSEL0 = 0x5500; //SCK_PinP04SelMask|MISO_PinP05SelMask|MOSI_PinP06SelMask;  //0x1500; //0x5500 with SSEL on pin P0.7
+	  PINSEL0 = SCK_PinP04SelMask|MISO_PinP05SelMask|MOSI_PinP06SelMask;  //0x1500; //0x5500 with SSEL on pin P0.7
     S0SPCCR = spiFrameParams.ClkDivider;
 	  S0SPCR=0;
 	  S0SPCR= (spiFrameParams.ucCpha<<SPCR_CPHA_POS)|(spiFrameParams.ucCpol<<SPCR_CPOL_POS)|(spiFrameParams.ucClsbf<<SPCR_LSBF_POS);
@@ -87,7 +64,7 @@ void SPI_ExecuteTransaction(struct SPI_TransactionParams spiTransactionParams ){
 			 S0SPDR= *(spiTransactionParams.pucBytesForTx); //dummy data
      }
 	// Wait for transfer to be completed 
-	   while(!(S0SPSR & SPSR_SPIF)){};
+	  while(!(S0SPSR & SPSR_SPIF)){}; 
 	   
 			 if(ucBytesCounter>=spiTransactionParams.ucRxBytesOffset){
 				*(spiTransactionParams.pucBytesForRx++) = S0SPDR; 

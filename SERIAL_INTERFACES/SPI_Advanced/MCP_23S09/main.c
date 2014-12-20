@@ -22,7 +22,8 @@ int main(void)
 	MCP23S09_Init();
 	char uartReceiverBuffer[RECEIVER_SIZE];
   UART_InitWithInt(9600);
-  char cDataStr[15]= {"\nportget "}; 
+	Led_Init(); //DEBUG 
+  char cDataStr[15]= {"portget "}; 
 	
 		while(1)
     {

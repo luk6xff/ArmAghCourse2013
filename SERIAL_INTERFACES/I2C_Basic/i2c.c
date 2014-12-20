@@ -1,5 +1,6 @@
 #include<LPC21xx.h>
 #include "i2c.h"
+#include "led.h" //DEBUG
 
 // VIC (Vector Interrupt Controller) VICIntEnable
 #define VIC_I2C_CHANNEL_NR 8
@@ -9,7 +10,7 @@
 unsigned char ucI2cAddr;
 unsigned char ucI2cData;
 unsigned char ucPCF8574_Input;
-
+static unsigned char waitForEndTransmission;
 
 __irq void I2C_Interrupt(void){
 
@@ -21,6 +22,7 @@ __irq void I2C_Interrupt(void){
 		case (0x08):     			//Start Bit
 			I2CONCLR =0x20; 		//Clear start bit
 		  I2DAT = ucI2cAddr; //Send address and write Bit
+			Led_StepRight();
 		
 		break;
 		
@@ -34,6 +36,8 @@ __irq void I2C_Interrupt(void){
 		
 		case (0x28):     //data sent, ACK
 		  I2CONSET = 0x10; //Stop Condition
+			Led_StepLeft();
+			Led_StepLeft();
 		break;
 		
 		case (0x40):      // Slave address +R, ACK
@@ -47,7 +51,10 @@ __irq void I2C_Interrupt(void){
 		case (0x50):      // Data received, ACK
 			ucPCF8574_Input= I2DAT;
 			I2CONSET =0x10; // Stop Condition
-			//lock =0;        //Signal end of I2C Activity
+			waitForEndTransmission =0;        //Signal end of I2C Activity
+		  Led_StepLeft();
+			Led_StepLeft();
+			Led_StepLeft();
 		break;
 		
 		case (0x58):      // Data received, NOT ACK
@@ -67,8 +74,8 @@ void I2C_Init(void){
 
 	/* Remap interrupt vectors to SRAM */
 	//MEMMAP=0x2;
-
-
+  Led_Init();
+//PINSEL0 GPIO-0.2 SCL  , GPIO-0.3 SDA
 	PINSEL0=0x50;
 	/* Initialize I2C */
 	I2CONCLR=0x6C; /* clearing all flags */
@@ -89,11 +96,19 @@ void I2C_Init(void){
 
 void PCF8574_Write(unsigned char ucData){
 	
-	ucI2cAddr =0x74;
-	ucI2cData = ucData;
-	I2CONCLR = 0xFF; //Clear all I2C settings
-	I2CONSET = 0x40; //Enable the I2C interface
-	I2CONSET = 0x20; //Start Condition
+	ucI2cAddr =0x40;
+	int i=0;
+	//for(i =0; i<0xFF;i++){
+		waitForEndTransmission=1;
+	//	ucI2cAddr =i;
+		ucI2cData = ucData;
+		I2CONCLR = 0xFF; //Clear all I2C settings
+		I2CONSET = 0x40; //Enable the I2C interface
+		I2CONSET = 0x20; //Start Condition
+	//	while(waitForEndTransmission);
+	//}
+
+	
 
 
 

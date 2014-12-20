@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\SPI.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\SPI.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5.03 [Build 76]: Last Updated: Thu Nov 27 11:24:52 2014
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5.03 [Build 76]: Last Updated: Thu Dec 04 10:54:52 2014
 <BR><P>
 <H3>Maximum Stack Usage =        160 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -198,10 +198,10 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedStep
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<BR>[Called By]<UL><LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DAC_MCP4921_Set_Adv
 </UL>
 
-<P><STRONG><a name="[b]"></a>main</STRONG> (ARM, 172 bytes, Stack size 104 bytes, main.o(.text))
+<P><STRONG><a name="[b]"></a>main</STRONG> (ARM, 168 bytes, Stack size 104 bytes, main.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 160 + Unknown Stack Size
 <LI>Call Chain = main &rArr; DecodeMsg &rArr; DecodeTokens &rArr; eStringToKeyword
 </UL>
@@ -211,7 +211,6 @@ Global Symbols
 <LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DecodeMsg
 <LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DAC_MCP4921_Set_Adv
 <LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DAC_MCP4921_Init
-<LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_StepRight
 <LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_Init
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> rtentry2.o(.ARM.Collect$$rtentry$$0000000D)
@@ -237,11 +236,12 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[25]"></a>DAC_MCP4921_Set_Adv</STRONG> (ARM, 68 bytes, Stack size 8 bytes, dacmcp4921.o(.text))
+<P><STRONG><a name="[25]"></a>DAC_MCP4921_Set_Adv</STRONG> (ARM, 72 bytes, Stack size 8 bytes, dacmcp4921.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = DAC_MCP4921_Set_Adv &rArr; SPI_ExecuteTransaction
 </UL>
 <BR>[Calls]<UL><LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DAC_MCP4921_InitCSPin
 <LI><a href="#[28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_ExecuteTransaction
+<LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_StepRight
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>

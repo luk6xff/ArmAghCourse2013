@@ -21,7 +21,7 @@
 #define SPINT_SPI_INTERRUPT  (1<<0)
 
 //SCK frequency divider
-#define SCK_FREQ_DIVIDER 0x8  /*frequqncy of SCK = pclk/8  -> in our case: 12MHz/8 = 1.5 MHz*/
+#define SCK_FREQ_DIVIDER 254  /*frequqncy of SCK = pclk/8  -> in our case: 12MHz/8 = 1.5 MHz*/
 
 
 // Pinout Bit Masks

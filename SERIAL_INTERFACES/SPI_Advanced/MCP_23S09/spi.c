@@ -79,22 +79,24 @@ void SPI_ExecuteTransaction(struct SPI_TransactionParams spiTransactionParams ){
 	unsigned char nrOfBytes=  (ucSumOfNrOfBytesTx>ucSumOfNrOfBytesRx)?ucSumOfNrOfBytesTx:ucSumOfNrOfBytesRx;
 	
 	 unsigned char ucBytesCounter;
+	 unsigned char ucTxByte,ucRxByte;
    for(ucBytesCounter=0;ucBytesCounter<nrOfBytes;ucBytesCounter++){
-     if(ucBytesCounter>=spiTransactionParams.ucTxBytesOffset){
-			 S0SPDR= *(spiTransactionParams.pucBytesForTx++);
+		 
+		 if(ucBytesCounter>=spiTransactionParams.ucTxBytesOffset){
+			 ucTxByte= *(spiTransactionParams.pucBytesForTx++);
 		 }
 		 else {
-			 S0SPDR= *(spiTransactionParams.pucBytesForTx); //dummy data
+			 ucTxByte=*(spiTransactionParams.pucBytesForTx); //dummy data
      }
-	// Wait for transfer to be completed 
-	   while(!(S0SPSR & SPSR_SPIF)){};
-	   
-			 if(ucBytesCounter>=spiTransactionParams.ucRxBytesOffset){
-				*(spiTransactionParams.pucBytesForRx++) = S0SPDR; 
-		   }
-		   else {
-				*(spiTransactionParams.pucBytesForRx) = S0SPDR;  // dummy read to clear flags
-     }
+
+		 
+		 S0SPDR=ucTxByte;
+	   while(!(S0SPSR & SPSR_SPIF)){};  	// Wait for transfer to be completed 
+	   ucRxByte= S0SPDR; 
+			 
+		if(ucBytesCounter>=spiTransactionParams.ucRxBytesOffset){
+				*(spiTransactionParams.pucBytesForRx++) = ucRxByte; 
+		 }
 	}
 
 	

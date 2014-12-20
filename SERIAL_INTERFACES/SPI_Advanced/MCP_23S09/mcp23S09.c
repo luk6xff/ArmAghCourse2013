@@ -1,7 +1,7 @@
 #include<LPC21xx.h>
 #include "spi.h"
 #include "mcp23S09.h"
-
+#include "led.h"  //DEBUG
 
 #define CS_PinDirMask IO0DIR
 #define CS_PinMask 1<<10
@@ -57,6 +57,7 @@ void Port_MCP23S09_Set(unsigned char ucData){
 	
 	CS_PIN_RESET;
   SPI_ExecuteTransaction(spiTransactionParams );
+	Led_StepRight();//DEBUG
 	Port_MCP23S09_InitCSPin();
 	
 	
@@ -99,6 +100,7 @@ unsigned char Port_MCP23S09_Get(void){
 	
 	CS_PIN_RESET;
   SPI_ExecuteTransaction(spiTransactionParams );
+	Led_StepLeft();//DEBUG
 	Port_MCP23S09_InitCSPin();
 	
  return rxBuf[0];

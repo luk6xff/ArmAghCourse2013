@@ -1,7 +1,7 @@
 #include<LPC21xx.h>
 #include "spi.h"
 #include "dacMcp4921.h"
-
+#include "led.h" //DEBUG
 
 #define CS_PinDirMask IO0DIR
 #define CS_PinMask 1<<10
@@ -44,7 +44,7 @@ void DAC_MCP4921_Set_Adv(unsigned int uiData){
     txBuf[0]= ((uiData>>8)&0xFF)|0x30;
 	  txBuf[1]=  (uiData)&0xFF;
     SPI_ExecuteTransaction(spiTransactionParams );
-	
+		Led_StepRight();//DEBUG
 	  DAC_MCP4921_InitCSPin();
 }
 

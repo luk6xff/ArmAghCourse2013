@@ -37,7 +37,7 @@ int main(void)
                 case DACSET:
                      if((asToken[1].eType==NUMBER)&&(asToken[1].uValue.uiNumber<0x0FFF))
 												DAC_MCP4921_Set_Adv(asToken[1].uValue.uiNumber);
-										    Led_StepRight();
+										    //Led_StepRight();
                     break;
                 default:
                     break;
