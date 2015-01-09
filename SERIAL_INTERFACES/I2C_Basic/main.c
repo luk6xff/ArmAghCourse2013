@@ -18,6 +18,7 @@ struct Token asToken[MAX_TOKEN_NR];
 /*
 int main(void)
 {
+
 	I2C_Init();
 	char uartReceiverBuffer[RECEIVER_SIZE];
   UART_InitWithInt(9600);

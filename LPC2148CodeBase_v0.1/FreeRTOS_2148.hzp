@@ -1,0 +1,166 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="FreeRTOS_2148" version="2">
+  <project Name="FreeRTOS_2148">
+    <configuration Name="Common" Target="LPC2148" arm_architecture="v4T" arm_core_type="ARM7TDMI-S" arm_simulator_memory_simulation_filename="$(PackagesDir)/targets/Philips_LPC210X/LPC2000SimulatorMemory.dll" arm_simulator_memory_simulation_parameter="LPC21;0x80000;0x8000" arm_target_debug_interface_type="ARM7TDI" arm_target_loader_parameter="12000000" c_enforce_ansi_checking="No" c_only_additional_options="-fomit-frame-pointer" c_preprocessor_definitions="GCC_ARM7;SUPERVISOR_START;VECTORED_IRQ_INTERRUPTS;PACK_STRUCT_END=__attribute__((packed));ALIGN_STRUCT_END=__attribute__((aligned(4)))" c_user_include_directories="$(ProjectDir)/.;$(ProjectDir)/core/usb;$(ProjectDir)/chibi;$(ProjectDir)/FreeRTOS/Source/include;$(ProjectDir)/FreeRTOS/Demo/Common/include" gcc_entry_point="reset_handler" link_include_startup_code="No" linker_additional_files="$(PackagesDir)/lib/liblpc2000$(LibExt)$(LIB)" linker_memory_map_file="$(PackagesDir)/targets/Philips_LPC210X/Philips_LPC2148_MemoryMap.xml" linker_output_format="hex" oscillator_frequency="12MHz" project_directory="" project_type="Executable" property_groups_file_path="$(PackagesDir)/targets/Philips_LPC210X/propertyGroups21xx.xml"/>
+    <configuration Name="RAM" Placement="RAM" linker_section_placement_file="$(StudioDir)/targets/sram_placement.xml" target_reset_script="SRAMReset()"/>
+    <configuration Name="Flash" Placement="Flash" arm_target_flash_loader_file_path="$(PackagesDir)/targets/Philips_LPC210X/Release/Loader_rpc.elf" arm_target_flash_loader_type="LIBMEM RPC Loader" linker_section_placement_file="$(StudioDir)/targets/flash_placement.xml" target_reset_script="FLASHReset()"/>
+    <folder Name="Source Files" file_name="">
+      <configuration Name="Common" filter="c;cpp;cxx;cc;h;s;asm;inc"/>
+      <file file_name="main.c"/>
+      <file file_name="FreeRTOSConfig.h"/>
+      <folder Name="Core Peripherals">
+        <folder Name="adc">
+          <file file_name="core/adc/adc.c"/>
+        </folder>
+        <folder Name="cpu">
+          <file file_name="core/cpu/cpu.c"/>
+        </folder>
+        <folder Name="i2c">
+          <file file_name="core/i2c/i2c.c"/>
+          <file file_name="core/i2c/i2cInt.c"/>
+        </folder>
+        <folder Name="pwm">
+          <file file_name="core/pwm/pwm.c"/>
+        </folder>
+        <folder Name="spi">
+          <file file_name="core/spi/spi.c"/>
+        </folder>
+        <folder Name="uart">
+          <file file_name="core/uart/uart0.c"/>
+          <file file_name="core/uart/uart0ISR.c">
+            <configuration Name="Release" gcc_optimization_level="None"/>
+          </file>
+          <file file_name="core/uart/uart1.c"/>
+          <file file_name="core/uart/uart1ISR.c">
+            <configuration Name="Release" gcc_optimization_level="None"/>
+          </file>
+        </folder>
+        <folder Name="usb">
+          <folder Name="core">
+            <file file_name="core/usb/usbcontrol.c"/>
+            <file file_name="core/usb/usbinit.c"/>
+            <file file_name="core/usb/usbISR.c"/>
+            <file file_name="core/usb/usbstdreq.c"/>
+          </folder>
+          <folder Name="usbser">
+            <file file_name="core/usbser/usbser.c"/>
+          </folder>
+        </folder>
+        <folder Name="rtc">
+          <file file_name="core/rtc/rtc.c"/>
+          <file file_name="core/rtc/rtcISR.c">
+            <configuration Name="Release" gcc_optimization_level="None"/>
+          </file>
+        </folder>
+        <file file_name="drivers/reset.c"/>
+        <folder Name="eints">
+          <file file_name="core/eints/eint0.c"/>
+          <file file_name="core/eints/eint0ISR.c"/>
+          <file file_name="core/eints/eint2.c"/>
+          <file file_name="core/eints/eint2ISR.c">
+            <configuration Name="Release" gcc_optimization_level="None"/>
+          </file>
+        </folder>
+      </folder>
+      <file file_name="ProjectConfig.h"/>
+      <folder Name="Monitor">
+        <file file_name="monitor/args.c"/>
+        <file file_name="monitor/argsdispatch.c"/>
+        <file file_name="monitor/monitor.c"/>
+      </folder>
+      <file file_name="printf-stdarg.c"/>
+      <file file_name="DOxygenTemplates.txt"/>
+      <folder Name="Drivers">
+        <folder Name="leds">
+          <file file_name="drivers/leds/leds.c"/>
+        </folder>
+        <folder Name="tcs3414">
+          <file file_name="drivers/tcs3414/tcs3414.c"/>
+        </folder>
+        <folder Name="sd">
+          <file file_name="drivers/sd/mmc.c"/>
+          <file file_name="drivers/sd/ssp.c"/>
+        </folder>
+      </folder>
+    </folder>
+    <folder Name="System Files">
+      <file file_name="$(StudioDir)/source/crt0.s"/>
+      <file file_name="$(PackagesDir)/targets/Philips_LPC210X/Philips_LPC210X_Startup.s"/>
+      <file file_name="$(PackagesDir)/targets/Philips_LPC210X/LPC210x.c"/>
+      <file file_name="$(PackagesDir)/targets/Philips_LPC210X/Philips_LPC210X_Target.js">
+        <configuration Name="Common" file_type="Reset Script"/>
+      </file>
+      <file file_name="$(PackagesDir)/targets/Philips_LPC210X/VIC.c"/>
+      <file file_name="$(PackagesDir)/targets/Philips_LPC210X/VIC_irq_handler.s"/>
+    </folder>
+    <folder Name="FreeRTOS">
+      <file file_name="FreeRTOS/Source/portable/GCC/ARM7_LPC2000/portISR.c"/>
+      <file file_name="FreeRTOS/Source/portable/GCC/ARM7_LPC2000/port.c"/>
+      <file file_name="FreeRTOS/Source/portable/MemMang/heap_2.c"/>
+      <file file_name="FreeRTOS/Source/tasks.c"/>
+      <file file_name="FreeRTOS/Source/queue.c"/>
+      <file file_name="FreeRTOS/Source/list.c"/>
+      <file file_name="freertos/Source/portable/GCC/ARM7_LPC2000/threads.js"/>
+    </folder>
+    <configuration Name="Release" c_preprocessor_definitions="STARTUP_FROM_RESET"/>
+    <folder Name="uIP" file_name="">
+      <folder Name="apps">
+        <folder Name="dhcpc">
+          <file file_name="uip/apps/dhcpc/dhcpc.c">
+            <configuration Name="ARM Flash Debug" build_exclude_from_build="No"/>
+          </file>
+        </folder>
+        <folder Name="sntp">
+          <file file_name="uip/apps/sntp/sntp.c"/>
+        </folder>
+        <folder Name="telnetd">
+          <file file_name="uip/apps/telnetd/telnetd.c"/>
+        </folder>
+        <folder Name="webserver">
+          <file file_name="uip/apps/webserver/httpd.c"/>
+          <file file_name="uip/apps/webserver/httpd-cgi.c"/>
+          <file file_name="uip/apps/webserver/httpd-fs.c"/>
+          <file file_name="uip/apps/webserver/http-strings.c"/>
+        </folder>
+      </folder>
+      <folder Name="hardware">
+        <file file_name="uip/hardware/enc28j60.c">
+          <configuration Name="ARM Flash Debug" build_exclude_from_build="No"/>
+        </file>
+      </folder>
+      <folder Name="lib">
+        <file file_name="uip/lib/memb.c"/>
+      </folder>
+      <folder Name="uip">
+        <file file_name="uip/uip/psock.c"/>
+        <file file_name="uip/uip/uip.c">
+          <configuration Name="ARM Flash Debug" build_exclude_from_build="No"/>
+        </file>
+        <file file_name="uip/uip/uip_arch.c"/>
+        <file file_name="uip/uip/uip_arp.c"/>
+        <file file_name="uip/uip/uip_timer.c"/>
+        <file file_name="uip/uip/uip-fw.c"/>
+        <file file_name="uip/uip/uiplib.c"/>
+        <file file_name="uip/uip/uip-neighbor.c"/>
+      </folder>
+      <file file_name="uip/clock.c"/>
+      <file file_name="uip/uiptask.c">
+        <configuration Name="ARM Flash Debug" build_exclude_from_build="No"/>
+      </file>
+    </folder>
+    <folder Name="fatfs">
+      <file file_name="fatfs/disk.c"/>
+      <file file_name="fatfs/ff.c"/>
+    </folder>
+  </project>
+  <configuration Name="ARM RAM Debug" inherited_configurations="ARM;RAM;Debug"/>
+  <configuration Name="ARM" Platform="ARM" arm_instruction_set="ARM" arm_library_instruction_set="ARM" c_preprocessor_definitions="__ARM" hidden="Yes"/>
+  <configuration Name="RAM" c_preprocessor_definitions="__RAM_BUILD" hidden="Yes"/>
+  <configuration Name="Debug" build_debug_information="Yes" c_preprocessor_definitions="DEBUG" gcc_optimization_level="None" hidden="Yes" link_include_startup_code="No"/>
+  <configuration Name="ARM RAM Release" inherited_configurations="ARM;RAM;Release"/>
+  <configuration Name="Release" build_debug_information="No" c_additional_options="-g1" c_preprocessor_definitions="NDEBUG" gcc_optimization_level="Level 1" hidden="Yes" link_include_startup_code="No"/>
+  <configuration Name="ARM Flash Debug" inherited_configurations="ARM;Flash;Debug"/>
+  <configuration Name="Flash" c_preprocessor_definitions="__FLASH_BUILD" hidden="Yes"/>
+  <configuration Name="ARM Flash Release" inherited_configurations="ARM;Flash;Release"/>
+  <configuration Name="Common" arm_linker_abt_stack_size="8" arm_linker_fiq_stack_size="32" arm_linker_stack_size="256" arm_linker_svc_stack_size="256" arm_linker_und_stack_size="8"/>
+</solution>

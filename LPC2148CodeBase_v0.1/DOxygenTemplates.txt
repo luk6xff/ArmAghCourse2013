@@ -1,0 +1,49 @@
+These dOxygen 'templates' are provided for reference sake.  If you wish to
+add dOxygen compatible comments to your code, simply replace anything
+in brackets (ex. '[filename]') with your own text.  Not all tags are 
+necessary in every situation ('\warning', etc.), but they are provided
+for reference sake when necessary.
+
+
+File Header Comments
+/**************************************************************************/
+/*! 
+    \file     [filename]
+    \author   [author]
+    \date     [date]
+    \version  [version]
+
+    [description]
+
+    \code 
+    [example]
+    \endcode
+*/
+/**************************************************************************/
+
+
+Function/Method Comments
+/**************************************************************************/
+/*! 
+    \brief [brief_desc]
+
+    [detailed description]
+
+    @param[in]  [name of input param]   
+                [desc]
+    @param[out] [name of output param]  
+                [desc]
+
+    \return     [info about return value]
+    \note       [notes]
+    \warning    [any warnings]
+*/
+/**************************************************************************/
+
+
+Minimal dOxygen Comment
+/**************************************************************************/
+/*! 
+    [Comment/Description]
+*/
+/**************************************************************************/

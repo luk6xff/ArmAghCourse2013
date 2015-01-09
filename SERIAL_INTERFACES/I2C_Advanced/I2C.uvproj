@@ -502,6 +502,11 @@
               <FileType>1</FileType>
               <FilePath>.\pcf8574.c</FilePath>
             </File>
+            <File>
+              <FileName>mc24lc64.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\mc24lc64.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

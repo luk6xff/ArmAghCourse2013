@@ -6,4 +6,4 @@
 .\main.o: uart.h
 .\main.o: command_decoder.h
 .\main.o: string.h
-.\main.o: i2c.h
+.\main.o: pcf8574.h

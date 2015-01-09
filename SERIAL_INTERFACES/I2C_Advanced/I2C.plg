@@ -3,7 +3,26 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
-C:\Users\lukasz\Desktop\arm-agh-2013-master\SERIAL_INTERFACES\I2C_Advanced\I2C.uvproj
-Project File Date:  11/27/2014
+C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\I2C_Advanced\I2C.uvproj
+Project File Date:  01/07/2015
 
 <h2>Output:</h2>
+Build target 'Target 1'
+compiling i2c.c...
+i2c.c(11): warning:  #177-D: variable "ucI2cData" was declared but never referenced
+compiling pcf8574.c...
+pcf8574.c(9): warning:  #550-D: variable "ucPCF8574_Input" was set but never used
+linking...
+Program Size: Code=5024 RO-data=32 RW-data=88 ZI-data=1520  
+FromELF: creating hex file...
+".\I2C.axf" - 0 Errors, 2 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+main.c(16): warning:  #223-D: function "I2C_Init" declared implicitly
+main.c(41): warning:  #111-D: statement is unreachable
+compiling pcf8574.c...
+pcf8574.c(9): warning:  #550-D: variable "ucPCF8574_Input" was set but never used
+linking...
+Program Size: Code=5024 RO-data=32 RW-data=88 ZI-data=1520  
+FromELF: creating hex file...
+".\I2C.axf" - 0 Errors, 3 Warning(s).

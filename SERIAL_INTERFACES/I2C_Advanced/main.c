@@ -5,7 +5,7 @@
 #include "uart.h"
 #include "command_decoder.h"
 #include "string.h"
-#include "i2c.h"
+#include "pcf8574.h"
 
 unsigned char ucTokenNr;
 struct Token asToken[MAX_TOKEN_NR];

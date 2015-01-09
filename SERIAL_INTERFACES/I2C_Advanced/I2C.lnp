@@ -12,6 +12,7 @@
 ".\uart.o"
 ".\i2c.o"
 ".\pcf8574.o"
+".\mc24lc64.o"
 --strict --scatter ".\I2C.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
