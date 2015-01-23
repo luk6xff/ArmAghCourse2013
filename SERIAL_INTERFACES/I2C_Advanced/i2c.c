@@ -13,7 +13,7 @@ static unsigned char *i2cDataBuffer;
 static int i2cDataLenWrite;
 static int i2cDataLenRead;
 static int i2cDataCnt;
-static volatile unsigned char ucEndOfTransmissionFlag;
+static volatile int ucEndOfTransmissionFlag;
 
 __irq void I2C_Interrupt(void){
 
@@ -77,6 +77,7 @@ __irq void I2C_Interrupt(void){
 	  case (0x38): // I2CERR_ARBLOST
       {
         I2CONSET = 0x20;
+				ucEndOfTransmissionFlag =0;
       }
      break;
 		
@@ -97,6 +98,7 @@ __irq void I2C_Interrupt(void){
       break;
 		
 		case (0xF8):
+			ucEndOfTransmissionFlag =0;
 		 break;
 				
 		default: 
@@ -114,9 +116,7 @@ __irq void I2C_Interrupt(void){
 
 void I2C_Init(void){
 
-	/* Remap interrupt vectors to SRAM */
-	//MEMMAP=0x2;
-  Led_Init();  //DEBUG
+
   //PINSEL0 /************* GPIO-0.2 SCL  , GPIO-0.3 SDA ************/
 	PINSEL0=0x50;
 	/* Initialize I2C */
@@ -136,6 +136,7 @@ void I2C_Init(void){
 
 void I2C_ExecuteTransaction(struct I2C_Params i2cParams){
 	
+	while(ucEndOfTransmissionFlag); 
 	ucI2cAddr = i2cParams.ucSlaveAddress;
 	ucEndOfTransmissionFlag=1;
 	
@@ -144,11 +145,12 @@ void I2C_ExecuteTransaction(struct I2C_Params i2cParams){
 		i2cDataBuffer =i2cParams.pucBytesForTx;
 		i2cDataLenWrite = i2cParams.ucNrOfBytesForTx;
 		i2cDataLenRead = i2cParams.ucNrOfBytesForRx;
+		i2cParams.ucDone= ucEndOfTransmissionFlag;
 		i2cDataCnt = 0;
 		I2CONCLR = 0xFF; //Clear all I2C settings
 		I2CONSET = 0x40; //Enable the I2C interface
 		I2CONSET = 0x20; //Start Condition
-		while(ucEndOfTransmissionFlag); //for tests
+
 	
 
 	}
@@ -161,7 +163,6 @@ void I2C_ExecuteTransaction(struct I2C_Params i2cParams){
 		I2CONCLR = 0xFF; //Clear all I2C settings
 		I2CONSET = 0x40; //Enable the I2C interface
 		I2CONSET = 0x20; //Start Condition
-		while(ucEndOfTransmissionFlag); //for tests
 	}
 	
 

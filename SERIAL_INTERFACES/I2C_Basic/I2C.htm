@@ -3,11 +3,11 @@
 <title>Static Call Graph - [.\I2C.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\I2C.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5.03 [Build 76]: Last Updated: Fri Dec 19 17:13:47 2014
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5.03 [Build 76]: Last Updated: Thu Jan 15 10:40:03 2015
 <BR><P>
-<H3>Maximum Stack Usage =         48 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =         24 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
-I2C_Interrupt &rArr; Led_StepRight &rArr; LedStep
+Timer0IRQHandler
 <P>
 <H3>
 Functions with no stack information
@@ -193,12 +193,8 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedStep
 </UL>
 
-<P><STRONG><a name="[1e]"></a>Led_StepLeft</STRONG> (ARM, 20 bytes, Stack size 8 bytes, led.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = Led_StepLeft &rArr; LedStep
-</UL>
-<BR>[Calls]<UL><LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedStep
-</UL>
-<BR>[Called By]<UL><LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Interrupt
+<P><STRONG><a name="[1e]"></a>Led_StepLeft</STRONG> (ARM, 20 bytes, Stack size 8 bytes, led.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedStep
 </UL>
 
 <P><STRONG><a name="[1f]"></a>Led_StepRight</STRONG> (ARM, 20 bytes, Stack size 8 bytes, led.o(.text))
@@ -206,8 +202,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedStep
 </UL>
-<BR>[Called By]<UL><LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Interrupt
-<LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setPortPcf8574
+<BR>[Called By]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setPortPcf8574
 </UL>
 
 <P><STRONG><a name="[b]"></a>main</STRONG> (ARM, 28 bytes, Stack size 0 bytes, main.o(.text))
@@ -235,11 +230,8 @@ Global Symbols
 </UL>
 <P><STRONG><a name="[4b]"></a>Timer1Interrupts_Init</STRONG> (ARM, 92 bytes, Stack size 0 bytes, timer_interrupts.o(.text), UNUSED)
 
-<P><STRONG><a name="[26]"></a>I2C_Interrupt</STRONG> (ARM, 360 bytes, Stack size 32 bytes, i2c.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = I2C_Interrupt &rArr; Led_StepRight &rArr; LedStep
-</UL>
-<BR>[Calls]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_StepRight
-<LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_StepLeft
+<P><STRONG><a name="[26]"></a>I2C_Interrupt</STRONG> (ARM, 336 bytes, Stack size 12 bytes, i2c.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = I2C_Interrupt
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> i2c.o(.text)
 </UL>
@@ -350,7 +342,7 @@ Local Symbols
 <LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_StepLeft
 </UL>
 
-<P><STRONG><a name="[c]"></a>setPortPcf8574</STRONG> (ARM, 24 bytes, Stack size 8 bytes, main.o(.text))
+<P><STRONG><a name="[c]"></a>setPortPcf8574</STRONG> (ARM, 72 bytes, Stack size 8 bytes, main.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = setPortPcf8574 &rArr; Led_StepRight &rArr; LedStep
 </UL>
 <BR>[Calls]<UL><LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCF8574_Write

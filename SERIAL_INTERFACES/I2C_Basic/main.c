@@ -53,8 +53,12 @@ int main(void)
 */
 
 static void setPortPcf8574(void){
-
-  PCF8574_Write(0x01);
+  static unsigned char counter;
+	counter++;
+	if(counter==0xFF){
+		counter=0;
+	}
+  PCF8574_Write(counter);
 	Led_StepRight();
 
 }

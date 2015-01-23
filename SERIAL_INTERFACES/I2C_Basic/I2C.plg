@@ -3,7 +3,51 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
-C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\I2C_Basic\I2C.uvproj
-Project File Date:  12/19/2014
+H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\I2C_Basic\I2C.uvproj
+Project File Date:  01/15/2015
 
 <h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+main.c(76): warning:  #111-D: statement is unreachable
+main.c(71): warning:  #177-D: variable "uartReceiverBuffer" was declared but never referenced
+linking...
+Program Size: Code=2076 RO-data=32 RW-data=16 ZI-data=1256  
+FromELF: creating hex file...
+".\I2C.axf" - 0 Errors, 2 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=2076 RO-data=32 RW-data=16 ZI-data=1256  
+FromELF: creating hex file...
+".\I2C.axf" - 0 Errors, 0 Warning(s).
+Build target 'Target 1'
+compiling i2c.c...
+i2c.c(116): warning:  #1-D: last line of file ends without a newline
+i2c.c(101): warning:  #177-D: variable "i" was declared but never referenced
+i2c.c(14): warning:  #550-D: variable "waitForEndTransmission" was set but never used
+linking...
+Program Size: Code=2052 RO-data=32 RW-data=16 ZI-data=1256  
+FromELF: creating hex file...
+".\I2C.axf" - 0 Errors, 3 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=2052 RO-data=32 RW-data=16 ZI-data=1256  
+FromELF: creating hex file...
+".\I2C.axf" - 0 Errors, 0 Warning(s).
+Build target 'Target 1'
+compiling i2c.c...
+i2c.c(116): warning:  #1-D: last line of file ends without a newline
+i2c.c(101): warning:  #177-D: variable "i" was declared but never referenced
+i2c.c(14): warning:  #550-D: variable "waitForEndTransmission" was set but never used
+linking...
+Program Size: Code=2052 RO-data=32 RW-data=16 ZI-data=1256  
+FromELF: creating hex file...
+".\I2C.axf" - 0 Errors, 3 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+main.c(76): warning:  #111-D: statement is unreachable
+main.c(71): warning:  #177-D: variable "uartReceiverBuffer" was declared but never referenced
+linking...
+Program Size: Code=2056 RO-data=32 RW-data=16 ZI-data=1256  
+FromELF: creating hex file...
+".\I2C.axf" - 0 Errors, 2 Warning(s).

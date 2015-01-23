@@ -1,65 +1,68 @@
 Dependencies for Project 'I2C', Target 'Target 1': (DO NOT MODIFY !)
-F (.\Startup.s)(0x54943B78)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
-F (.\command_decoder.c)(0x54943B78)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\command_decoder.o --omf_browse .\command_decoder.crf --depend .\command_decoder.d)
-I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7FD94)
-I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7FD94)
-I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7FD94)
-I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7FD94)
-I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\I2C_Advanced\string.h)(0x54943B78)
-I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\I2C_Advanced\command_decoder.h)(0x54943B78)
-F (.\dacMcp4921.c)(0x54943B78)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\dacmcp4921.o --omf_browse .\dacmcp4921.crf --depend .\dacmcp4921.d)
-I (C:\Keil\ARM\Inc\Philips\LPC21xx.h)(0x51C7FF8C)
-I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\I2C_Advanced\spi.h)(0x54943B78)
-I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\I2C_Advanced\dacMcp4921.h)(0x54943B78)
-F (.\keyboard.c)(0x54943B78)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\keyboard.o --omf_browse .\keyboard.crf --depend .\keyboard.d)
-I (C:\Keil\ARM\Inc\Philips\LPC21xx.h)(0x51C7FF8C)
-I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7FD94)
-I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\I2C_Advanced\keyboard.h)(0x54943B78)
-F (.\led.c)(0x54943B78)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\led.o --omf_browse .\led.crf --depend .\led.d)
-I (C:\Keil\ARM\Inc\Philips\LPC21xx.h)(0x51C7FF8C)
-I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7FD94)
-I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\I2C_Advanced\led.h)(0x54943B78)
-F (.\main.c)(0x54943B78)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\main.o --omf_browse .\main.crf --depend .\main.d)
-I (C:\Keil\ARM\Inc\Philips\LPC21xx.h)(0x51C7FF8C)
-I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7FD94)
-I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7FD94)
-I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7FD94)
-I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\I2C_Advanced\uart.h)(0x54943B78)
-I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\I2C_Advanced\command_decoder.h)(0x54943B78)
-I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\I2C_Advanced\string.h)(0x54943B78)
-I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\I2C_Advanced\i2c.h)(0x54943B78)
-F (.\mcp23S09.c)(0x54943B78)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\mcp23s09.o --omf_browse .\mcp23s09.crf --depend .\mcp23s09.d)
-I (C:\Keil\ARM\Inc\Philips\LPC21xx.h)(0x51C7FF8C)
-I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\I2C_Advanced\spi.h)(0x54943B78)
-I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\I2C_Advanced\mcp23S09.h)(0x54943B78)
-F (.\spi.c)(0x54943B78)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\spi.o --omf_browse .\spi.crf --depend .\spi.d)
-I (C:\Keil\ARM\Inc\Philips\LPC21xx.h)(0x51C7FF8C)
-I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\I2C_Advanced\spi.h)(0x54943B78)
-F (.\string.c)(0x54943B78)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\string.o --omf_browse .\string.crf --depend .\string.d)
-I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\I2C_Advanced\string.h)(0x54943B78)
-F (.\timer_interrupts.c)(0x54943B78)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\timer_interrupts.o --omf_browse .\timer_interrupts.crf --depend .\timer_interrupts.d)
-I (C:\Keil\ARM\Inc\Philips\LPC21xx.H)(0x51C7FF8C)
-I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\I2C_Advanced\timer_interrupts.h)(0x54943B78)
-I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\I2C_Advanced\led.h)(0x54943B78)
-F (.\uart.c)(0x54943B78)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\uart.o --omf_browse .\uart.crf --depend .\uart.d)
-I (C:\Keil\ARM\Inc\Philips\LPC21xx.h)(0x51C7FF8C)
-I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\I2C_Advanced\uart.h)(0x54943B78)
-I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\I2C_Advanced\string.h)(0x54943B78)
-F (.\command_decoder.h)(0x54943B78)()
-F (.\dacMcp4921.h)(0x54943B78)()
-F (.\keyboard.h)(0x54943B78)()
-F (.\led.h)(0x54943B78)()
-F (.\mcp23S09.h)(0x54943B78)()
-F (.\spi.h)(0x54943B78)()
-F (.\string.h)(0x54943B78)()
-F (.\timer_interrupts.h)(0x54943B78)()
-F (.\uart.h)(0x54943B78)()
-F (.\i2c.c)(0x54AC79EA)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\i2c.o --omf_browse .\i2c.crf --depend .\i2c.d)
-I (C:\Keil\ARM\Inc\Philips\LPC21xx.h)(0x51C7FF8C)
-I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\I2C_Advanced\i2c.h)(0x54943B78)
-I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\I2C_Advanced\led.h)(0x54943B78)
-F (.\pcf8574.c)(0x54AC420B)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\pcf8574.o --omf_browse .\pcf8574.crf --depend .\pcf8574.d)
-I (C:\Keil\ARM\Inc\Philips\LPC21xx.h)(0x51C7FF8C)
-I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\I2C_Advanced\i2c.h)(0x54943B78)
-I (C:\Users\lukasz\Desktop\AGH\7_SEMESTR\ARMY\LukaszUszkoARMCurrent\SERIAL_INTERFACES\I2C_Advanced\pcf8574.h)(0x54943B78)
-F (.\mc24lc64.c)(0x54AC3B42)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\mc24lc64.o --omf_browse .\mc24lc64.crf --depend .\mc24lc64.d)
+F (.\Startup.s)(0x54B90EDC)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I "H:\Program Files\Keil\ARM\RV31\INC"-I "H:\Program Files\Keil\ARM\CMSIS\Include"-I "H:\Program Files\Keil\ARM\Inc\Philips"--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\command_decoder.c)(0x54B90EDB)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I "H:\Program Files\Keil\ARM\RV31\INC"-I "H:\Program Files\Keil\ARM\CMSIS\Include"-I "H:\Program Files\Keil\ARM\Inc\Philips"-o .\command_decoder.o --omf_browse .\command_decoder.crf --depend .\command_decoder.d)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x00000000)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x00000000)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x00000000)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x00000000)
+I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\I2C_Advanced\string.h)(0x54B90EDC)
+I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\I2C_Advanced\command_decoder.h)(0x54B90EDB)
+F (.\dacMcp4921.c)(0x54B90EDB)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I "H:\Program Files\Keil\ARM\RV31\INC"-I "H:\Program Files\Keil\ARM\CMSIS\Include"-I "H:\Program Files\Keil\ARM\Inc\Philips"-o .\dacmcp4921.o --omf_browse .\dacmcp4921.crf --depend .\dacmcp4921.d)
+I (C:\Keil\ARM\Inc\Philips\LPC21xx.h)(0x00000000)
+I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\I2C_Advanced\spi.h)(0x54B90EDC)
+I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\I2C_Advanced\dacMcp4921.h)(0x54B90EDB)
+F (.\keyboard.c)(0x54B90EDB)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I "H:\Program Files\Keil\ARM\RV31\INC"-I "H:\Program Files\Keil\ARM\CMSIS\Include"-I "H:\Program Files\Keil\ARM\Inc\Philips"-o .\keyboard.o --omf_browse .\keyboard.crf --depend .\keyboard.d)
+I (C:\Keil\ARM\Inc\Philips\LPC21xx.h)(0x00000000)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x00000000)
+I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\I2C_Advanced\keyboard.h)(0x54B90EDB)
+F (.\led.c)(0x54B90EDB)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I "H:\Program Files\Keil\ARM\RV31\INC"-I "H:\Program Files\Keil\ARM\CMSIS\Include"-I "H:\Program Files\Keil\ARM\Inc\Philips"-o .\led.o --omf_browse .\led.crf --depend .\led.d)
+I (C:\Keil\ARM\Inc\Philips\LPC21xx.h)(0x00000000)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x00000000)
+I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\I2C_Advanced\led.h)(0x54B90EDB)
+F (.\main.c)(0x54B90EDB)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I "H:\Program Files\Keil\ARM\RV31\INC"-I "H:\Program Files\Keil\ARM\CMSIS\Include"-I "H:\Program Files\Keil\ARM\Inc\Philips"-o .\main.o --omf_browse .\main.crf --depend .\main.d)
+I (H:\Program Files\Keil\ARM\Inc\Philips\LPC21xx.h)(0x51C7FF8C)
+I (H:\Program Files\Keil\ARM\ARMCC\include\stdio.h)(0x51C7FD94)
+I (H:\Program Files\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7FD94)
+I (H:\Program Files\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7FD94)
+I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\I2C_Advanced\uart.h)(0x54B90EDC)
+I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\I2C_Advanced\command_decoder.h)(0x54B90EDB)
+I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\I2C_Advanced\timer_interrupts.h)(0x54B90EDC)
+I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\I2C_Advanced\led.h)(0x54B90EDB)
+I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\I2C_Advanced\string.h)(0x54B90EDC)
+I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\I2C_Advanced\pcf8574.h)(0x54B90EDC)
+I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\I2C_Advanced\i2c.h)(0x54B90EDB)
+F (.\mcp23S09.c)(0x54B90EDB)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I "H:\Program Files\Keil\ARM\RV31\INC"-I "H:\Program Files\Keil\ARM\CMSIS\Include"-I "H:\Program Files\Keil\ARM\Inc\Philips"-o .\mcp23s09.o --omf_browse .\mcp23s09.crf --depend .\mcp23s09.d)
+I (C:\Keil\ARM\Inc\Philips\LPC21xx.h)(0x00000000)
+I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\I2C_Advanced\spi.h)(0x54B90EDC)
+I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\I2C_Advanced\mcp23S09.h)(0x54B90EDB)
+F (.\spi.c)(0x54B90EDC)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I "H:\Program Files\Keil\ARM\RV31\INC"-I "H:\Program Files\Keil\ARM\CMSIS\Include"-I "H:\Program Files\Keil\ARM\Inc\Philips"-o .\spi.o --omf_browse .\spi.crf --depend .\spi.d)
+I (C:\Keil\ARM\Inc\Philips\LPC21xx.h)(0x00000000)
+I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\I2C_Advanced\spi.h)(0x54B90EDC)
+F (.\string.c)(0x54B90EDC)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I "H:\Program Files\Keil\ARM\RV31\INC"-I "H:\Program Files\Keil\ARM\CMSIS\Include"-I "H:\Program Files\Keil\ARM\Inc\Philips"-o .\string.o --omf_browse .\string.crf --depend .\string.d)
+I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\I2C_Advanced\string.h)(0x54B90EDC)
+F (.\timer_interrupts.c)(0x54B90EDC)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I "H:\Program Files\Keil\ARM\RV31\INC"-I "H:\Program Files\Keil\ARM\CMSIS\Include"-I "H:\Program Files\Keil\ARM\Inc\Philips"-o .\timer_interrupts.o --omf_browse .\timer_interrupts.crf --depend .\timer_interrupts.d)
+I (C:\Keil\ARM\Inc\Philips\LPC21xx.H)(0x00000000)
+I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\I2C_Advanced\timer_interrupts.h)(0x54B90EDC)
+I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\I2C_Advanced\led.h)(0x54B90EDB)
+F (.\uart.c)(0x54B90EDC)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I "H:\Program Files\Keil\ARM\RV31\INC"-I "H:\Program Files\Keil\ARM\CMSIS\Include"-I "H:\Program Files\Keil\ARM\Inc\Philips"-o .\uart.o --omf_browse .\uart.crf --depend .\uart.d)
+I (C:\Keil\ARM\Inc\Philips\LPC21xx.h)(0x00000000)
+I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\I2C_Advanced\uart.h)(0x54B90EDC)
+I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\I2C_Advanced\string.h)(0x54B90EDC)
+F (.\command_decoder.h)(0x54B90EDB)()
+F (.\dacMcp4921.h)(0x54B90EDB)()
+F (.\keyboard.h)(0x54B90EDB)()
+F (.\led.h)(0x54B90EDB)()
+F (.\mcp23S09.h)(0x54B90EDB)()
+F (.\spi.h)(0x54B90EDC)()
+F (.\string.h)(0x54B90EDC)()
+F (.\timer_interrupts.h)(0x54B90EDC)()
+F (.\uart.h)(0x54B90EDC)()
+F (.\i2c.c)(0x54B90EDB)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I "H:\Program Files\Keil\ARM\RV31\INC"-I "H:\Program Files\Keil\ARM\CMSIS\Include"-I "H:\Program Files\Keil\ARM\Inc\Philips"-o .\i2c.o --omf_browse .\i2c.crf --depend .\i2c.d)
+I (H:\Program Files\Keil\ARM\Inc\Philips\LPC21xx.h)(0x51C7FF8C)
+I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\I2C_Advanced\i2c.h)(0x54B90EDB)
+I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\I2C_Advanced\led.h)(0x54B90EDB)
+F (.\pcf8574.c)(0x54B90EDB)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I "H:\Program Files\Keil\ARM\RV31\INC"-I "H:\Program Files\Keil\ARM\CMSIS\Include"-I "H:\Program Files\Keil\ARM\Inc\Philips"-o .\pcf8574.o --omf_browse .\pcf8574.crf --depend .\pcf8574.d)
+I (H:\Program Files\Keil\ARM\Inc\Philips\LPC21xx.h)(0x51C7FF8C)
+I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\I2C_Advanced\i2c.h)(0x54B90EDB)
+I (H:\Users\student\Desktop\arm-agh-2013-master\arm-agh-2013-master\SERIAL_INTERFACES\I2C_Advanced\pcf8574.h)(0x54B90EDC)
+F (.\mc24lc64.c)(0x54B90EDB)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --gnu-I "H:\Program Files\Keil\ARM\RV31\INC"-I "H:\Program Files\Keil\ARM\CMSIS\Include"-I "H:\Program Files\Keil\ARM\Inc\Philips"-o .\mc24lc64.o --omf_browse .\mc24lc64.crf --depend .\mc24lc64.d)
