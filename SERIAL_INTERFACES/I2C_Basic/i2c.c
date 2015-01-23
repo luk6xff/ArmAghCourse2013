@@ -1,3 +1,4 @@
+
 #include<LPC21xx.h>
 #include "i2c.h"
 #include "led.h" //DEBUG
@@ -22,7 +23,7 @@ __irq void I2C_Interrupt(void){
 		case (0x08):     			//Start Bit
 			I2CONCLR =0x20; 		//Clear start bit
 		  I2DAT = ucI2cAddr; //Send address and write Bit
-			Led_StepRight();
+		//+++++++++++	Led_StepRight();
 		
 		break;
 		
@@ -36,8 +37,8 @@ __irq void I2C_Interrupt(void){
 		
 		case (0x28):     //data sent, ACK
 		  I2CONSET = 0x10; //Stop Condition
-			Led_StepLeft();
-			Led_StepLeft();
+			//Led_StepLeft();
+			//Led_StepLeft();
 		break;
 		
 		case (0x40):      // Slave address +R, ACK
@@ -52,9 +53,9 @@ __irq void I2C_Interrupt(void){
 			ucPCF8574_Input= I2DAT;
 			I2CONSET =0x10; // Stop Condition
 			waitForEndTransmission =0;        //Signal end of I2C Activity
-		  Led_StepLeft();
-			Led_StepLeft();
-			Led_StepLeft();
+		  //Led_StepLeft();
+			//Led_StepLeft();
+			//Led_StepLeft();
 		break;
 		
 		case (0x58):      // Data received, NOT ACK
