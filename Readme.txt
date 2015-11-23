@@ -1,0 +1,1 @@
+Repo contains my solutions of tasks solved for ARM course that was taught at AGH Cracow
